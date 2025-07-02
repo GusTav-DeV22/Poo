@@ -29,9 +29,7 @@ public class App {
             System.out.println(p.folhaDePagamento());
         }
 
-        for(Funcionario p: funcionarios.){
 
-        }
 
 
 
