@@ -1,6 +1,6 @@
 package ads.poo.pagamento;
 
-public class ComissionadoEfetivo extends Comissionado{
+public class ComissionadoEfetivo extends Comissionado implements AumentoSalarial{
 
     private double salarioTotal;
     public ComissionadoEfetivo(String nome, double salario, double percentualComissao) {
@@ -15,6 +15,11 @@ public class ComissionadoEfetivo extends Comissionado{
 
     }
 
+    @Override
+    public void aumentarSalario10() {
+        this.salario = salario+(salario*.1);
+
+    }
 
     @Override
     public String folhaDePagamento() {
@@ -37,4 +42,6 @@ public class ComissionadoEfetivo extends Comissionado{
     public String toString() {
         return super.toString();
     }
+
+
 }
