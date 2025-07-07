@@ -4,39 +4,52 @@
 package ads.poo.pagamento;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class App {
 
     public static void main(String[] args) {
-        ArrayList<Funcionario> funcionarios = new ArrayList<>();
+        List<Funcionario> funcionarios = new ArrayList<>();
 
-        funcionarios.add(new MensalFixo("Joao",2000));
-        funcionarios.add(new MensalFixo("Amanda",2000));
-        funcionarios.add(new MensalFixo("Maria",2000));
-        funcionarios.add(new MensalFixo("Emily",2000));
+        funcionarios.add(new MensalFixo("Joao", 2000));
+        funcionarios.add(new MensalFixo("Amanda", 2000));
+        funcionarios.add(new MensalFixo("Maria", 2000));
+        funcionarios.add(new MensalFixo("Emily", 2000));
 
-        funcionarios.add(new Horista("Julia",2000,20));
-        funcionarios.add(new Horista("Julia",1500,15));
-        funcionarios.add(new Horista("Julia",3000,25));
+        funcionarios.add(new Horista("Julia", 2000, 20));
+        funcionarios.add(new Horista("Ramon", 1500, 15));
+        funcionarios.add(new Horista("Julia", 3000, 25));
 
-        funcionarios.add(new Comissionado("Kaio",10));
-        funcionarios.add(new Comissionado("Carol",5));
-        funcionarios.add(new Comissionado("Naná",10));
+        funcionarios.add(new Comissionado("Kaio", 10));
+        funcionarios.add(new Comissionado("Carol", 5));
+        funcionarios.add(new Comissionado("Naná", 10));
 
-        funcionarios.add(new ComissionadoEfetivo("Gustavo",3000,30));
+        funcionarios.add(new ComissionadoEfetivo("Gustavo", 3000, 10));
+        funcionarios.add(new ComissionadoEfetivo("Lucas",2500,5));
+        funcionarios.add(new ComissionadoEfetivo("Vitor",3500,2));
 
-        for(Funcionario p: funcionarios){
+        for (Funcionario p : funcionarios) {
             System.out.println(p.folhaDePagamento());
         }
 
 
+        System.out.println("--AUMENTO DE 10% EFETIVOS--");
 
-
-
+        for (Funcionario fun : funcionarios) {
+            if (fun instanceof ComissionadoEfetivo){
+                ((ComissionadoEfetivo) fun).aumentarSalario10();
+                System.out.println(fun.folhaDePagamento());
+            }
 
         }
 
 
 
+
+
+
+
+
+    }
     }
 
