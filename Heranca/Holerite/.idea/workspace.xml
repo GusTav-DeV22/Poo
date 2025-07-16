@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="71297d87-6fe4-44b8-8307-283ed9fb7b4a" name="Changes" comment="Exercicio folha de Pagamento" />
+    <list default="true" id="71297d87-6fe4-44b8-8307-283ed9fb7b4a" name="Changes" comment="Exercicio folha de Pagamento">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Personagem/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Personagem/app/src/main/java/ads/poo/Coletador.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Personagem/app/src/main/java/ads/poo/Guerreiro.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,9 +38,9 @@
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2zIDSCz2uWqIAEZvexiVnUa3SnM" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -47,7 +56,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "/home/gustavo23/Documentos/Programação/POO/Heranca/Holerite",
+    "last_opened_file_path": "/home/gustavo23/Documentos/Programação/POO/Heranca/Draw",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -72,6 +81,7 @@
       <option name="presentableId" value="Default" />
       <updated>1751409690463</updated>
       <workItem from="1751409692138" duration="17626000" />
+      <workItem from="1751903721481" duration="18000" />
     </task>
     <task id="LOCAL-00001" summary="Exercicio folha de Pagamento">
       <option name="closed" value="true" />
