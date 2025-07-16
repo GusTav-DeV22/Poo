@@ -20,8 +20,21 @@ public enum Valor {
     public String nome;
     public int valor;
 
+    public int getValor() {
+        return valor;
+    }
+
+    public void setValor(int valor) {
+        this.valor = valor;
+    }
+
     Valor(String nome, int valor) {
         this.nome = nome;
         this.valor = valor;
+    }
+
+    @Override
+    public String toString() {
+        return this.nome;
     }
 }

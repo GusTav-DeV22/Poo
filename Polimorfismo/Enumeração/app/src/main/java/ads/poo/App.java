@@ -9,9 +9,22 @@ import java.util.List;
 public class App {
 
     public static void main(String[] args) {
-        List<Carta> baralho = new ArrayList<>();
+
+        Baralho baralho = new Baralho();
+
+
+       // System.out.println(baralho.getCartas());
+
+
+
+        System.out.println(baralho.getCartas());
+
+
+
+
+       }
 
 
     }
 
-}
+

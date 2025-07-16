@@ -13,4 +13,9 @@ public enum Naipe {
         this.nome = nome;
         this.valor = valor;
     }
+
+    @Override
+    public String toString() {
+        return this.nome;
+    }
 }
