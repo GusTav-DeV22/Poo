@@ -18,8 +18,19 @@ public class App {
         lutadores.add(new Lutador("dead Code", "Australia",28,1.93,95.6,13,0,2));
 
         for (Lutador lutador : lutadores) {
-            System.out.println(lutador.getCategoria());
-        }
+         //   System.out.println(lutador.getCategoria());
+       }
+        System.out.println( lutadores.getFirst());
+        Luta luta = new Luta();
+
+       luta.lutar(lutadores.getFirst(),lutadores.getLast());
+
+
+        System.out.println( lutadores.getFirst());
+        luta.setDesafiado(lutadores.getFirst());
+        luta.setDesafiante(lutadores.getLast());
+        luta.lutar();
+        System.out.println( lutadores.getFirst());
 
 
 
