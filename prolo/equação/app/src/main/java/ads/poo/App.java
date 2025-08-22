@@ -3,12 +3,30 @@
  */
 package ads.poo;
 
-public class App {
-    public String getGreeting() {
-        return "Hello World!";
-    }
+import java.util.Scanner;
 
+public class App {
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+        Scanner teclado = new Scanner(System.in);
+
+        System.out.println("Programa de equação de 2° \u0394 = b² − 4ac  ");
+        System.out.println("Digite o valo para a variavel A");
+        double a = teclado.nextInt();
+        System.out.println("Digite o valor para a variavel B");
+        double b = teclado.nextInt();
+        System.out.println("Digite o valor para a variavel C");
+        double c = teclado.nextInt();
+
+
+        double delta = (Math.pow(b,2) - 4*(a*c));
+
+        System.out.println("O valor de \u0394 é "+delta);
+
+
+
+
+
+
+
     }
 }
