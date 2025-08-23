@@ -12,15 +12,29 @@ public class App {
         double[] notasP = new double[4];
         double[] notasPj = new double[2];
         int presenca;
+        boolean mediaAprovacao = false;
+        boolean aprovado = false;
+        String msgAprovado;
         double somaP = 0;
         double somaPj = 0;
-        notasP[0] = 7;
-        notasP[1] = 8;
-        notasP[2] = 6;
-        notasP[3] = 7;
 
-        notasPj[0] = 8;
-        notasPj[1] = 9;
+        System.out.println(" ===PROGRAMA PARA VERIFICAR APROVAÇAO===");
+        System.out.println("Digite a nota 1 da prova (valores entre 0,0 a 10,0)");
+        notasP[0] = teclado.nextDouble();
+        System.out.println("Digite a nota 2 da prova (valores entre 0,0 a 10,0)");
+        notasP[1] = teclado.nextDouble();
+        System.out.println("Digite a nota 3 da prova (valores entre 0,0 a 10,0)");
+        notasP[2] = teclado.nextDouble();
+        System.out.println("Digite a nota 4 da prova (valores entre 0,0 a 10,0)");
+        notasP[3] = teclado.nextDouble();
+        System.out.println("Ótimo, agora as notas do projeto");
+        System.out.println("Digite a nota 1 do projeto (valores entre 0,0 a 10,0)");
+        notasPj[0] = teclado.nextDouble();
+        System.out.println("Digite a nota 2 do projeto (valores entre 0,0 a 10,0)");
+        notasPj[1] = teclado.nextDouble();
+        System.out.println("Ótimo agora digite o percentual da presença");
+        presenca = teclado.nextInt();
+
 
 
         for (double i = 0; i < notasP.length; i++) {
@@ -33,11 +47,47 @@ public class App {
 
         }
 
-        int p = Math.toIntExact(Math.round((somaP / 4)));
-        int pj = Math.toIntExact(Math.round((somaPj / 2)));
+        double p =  (somaP/4.0);
+        double pj = (somaPj/2.0);
 
-        int r = (((p*3)+(pj*2))/5);
-        System.out.println(r);
+        double mediaFiinal = Math.round(((p*3.0)+(pj*2.0))/5.0);
+
+        if (somaPj >=12.0 && somaP >=24){
+            mediaAprovacao = true;
+        }else{
+            mediaFiinal = 0.0;
+        }
+
+        if (mediaAprovacao && presenca >=75){
+            aprovado = true;
+            msgAprovado = "Aprovado";
+        }else {
+            msgAprovado = "Reprovado";
+        }
+
+
+        System.out.println("""
+                P1- %.1f -  P2- %.1f  -  P3-%.1f  -  P4-%.1f -- PJ1-%.1f -  PJ2-%.1f
+                                        
+                Frequência =  %d%% 
+                
+                Media = %.1f
+                =======================
+                Status = %s
+                """.formatted(notasP[0],notasP[1],notasP[2],notasP[3],notasPj[0],notasPj[1],presenca,mediaFiinal,msgAprovado
+                ) );
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
