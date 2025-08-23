@@ -3,12 +3,48 @@
  */
 package org.example;
 
-public class App {
-    public String getGreeting() {
-        return "Hello World!";
-    }
+import java.util.Scanner;
 
+public class App {
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+
+        Scanner teclado = new Scanner(System.in);
+        double[] notasP = new double[4];
+        double[] notasPj = new double[2];
+        int presenca;
+        double somaP = 0;
+        double somaPj = 0;
+        notasP[0] = 7;
+        notasP[1] = 8;
+        notasP[2] = 6;
+        notasP[3] = 7;
+
+        notasPj[0] = 8;
+        notasPj[1] = 9;
+
+
+        for (double i = 0; i < notasP.length; i++) {
+            somaP = somaP + notasP[(int) i];
+
+        }
+        for (double i = 0; i < notasPj.length; i++) {
+            somaPj = somaPj + notasPj[(int) i];
+
+
+        }
+
+        int p = Math.toIntExact(Math.round((somaP / 4)));
+        int pj = Math.toIntExact(Math.round((somaPj / 2)));
+
+        int r = (((p*3)+(pj*2))/5);
+        System.out.println(r);
+
+
+
+
+
+
+
+
     }
 }
