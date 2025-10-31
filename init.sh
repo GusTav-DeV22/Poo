@@ -6,13 +6,14 @@ echo "git config"
 git init
 echo "git init"
 
-printf "1\n" | gradle init --overwrite --type java-application --dsl groovy --test-framework junit --java-version 21 --project-name RecuperacaoP2 --package ads.poo
+printf "1\n" | gradle init --overwrite --type java-application --dsl groovy --test-framework junit --java-version 21 --project-name AvaliacaoP2 --package ads.poo
 echo "gradle init"
+echo "..........."
 echo "org.gradle.console=plain" >> gradle.properties
 echo "org.gradle.logging.level=quiet" >> gradle.properties
 echo "gradle properties"
 
-echo "# Repositório da REC P2 ## Introdução a POO - Discente: Gustavo Ribeiro - Docente: Sergio Prolo ## Ferramentas ## Projeto" >> Readme.md
+echo "# Repositório da AValiação P2 ## Introdução a POO - Discente: Gustavo Ribeiro - Docente: Sergio Prolo  ## Projeto" >> README.md
 
 git add .
 
